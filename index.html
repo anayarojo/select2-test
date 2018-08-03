@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <select name="jobTypes" id="jobTypes" class="col-md-12" placeholder="Favor de seleccionar">
+                    <option value="" selected="selected"></option>
+                    <option value="1">Technician</option>
+                    <option value="2">Representative</option>
+                    <option value="3">Associate</option>
+                    <option value="4">Officer</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            let options = {
+                width: '100%',
+                placeholder: "Favor de seleccionar",
+                allowClear: true
+            };
+
+            $("select").select2();
+        });
+    </script>
+</body>
+
+</html>
